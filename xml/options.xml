@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Id: options.xml 1785 2011-03-03 13:28:14Z TobiasH87 $ -->
+<data xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/options.xsd">
+	<import>
+		<categories>
+			<category name="profileguard"></category>
+
+			<category name="profileguard.settings">
+				<parent>profileguard</parent>
+				<showorder>1</showorder>
+			</category>
+
+			<category name="profileguard.notify">
+				<parent>profileguard</parent>
+				<showorder>2</showorder>
+			</category>
+		</categories>
+		<options>
+			<option name="profileguard_notifyName">
+				<categoryname>profileguard.notify</categoryname>
+				<optiontype>boolean</optiontype>
+				<defaultvalue>0</defaultvalue>
+				<showorder>1</showorder>
+			</option>
+			<option name="profileguard_notifyQuit">
+				<categoryname>profileguard.notify</categoryname>
+				<optiontype>boolean</optiontype>
+				<defaultvalue>0</defaultvalue>
+				<showorder>2</showorder>
+			</option>
+			<option name="profileguard_notifyCancel">
+				<categoryname>profileguard.notify</categoryname>
+				<optiontype>boolean</optiontype>
+				<defaultvalue>0</defaultvalue>
+				<showorder>3</showorder>
+			</option>
+			<option name="profileguard_notifyAvatar">
+				<categoryname>profileguard.notify</categoryname>
+				<optiontype>boolean</optiontype>
+				<defaultvalue>0</defaultvalue>
+				<showorder>4</showorder>
+			</option>
+			<!-- notifySignature delete-->
+
+			<!-- pmNotification delete-->
+			<option name="profileguard_emailNotification">
+				<categoryname>profileguard.settings</categoryname>
+				<optiontype>boolean</optiontype>
+				<defaultvalue>0</defaultvalue>
+				<showorder>2</showorder>
+			</option>
+			<option name="profileguard_recipients">
+				<categoryname>profileguard.settings</categoryname>
+				<optiontype>multigroupselect</optiontype>
+				<defaultvalue>4</defaultvalue>
+				<showorder>3</showorder>
+				<validationpattern><![CDATA[.{1,}]]></validationpattern>
+			</option>
+			<!-- showPreview delete-->
+		</options>
+	</import>
+</data>

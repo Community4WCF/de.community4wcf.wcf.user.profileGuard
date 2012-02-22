@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Id: de.xml 1785 2011-03-03 13:28:14Z TobiasH87 $ -->
+<language xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/language.xsd" languagecode="de">
+	<category name="wcf.acp.option">
+		<item name="wcf.acp.option.category.profileguard"><![CDATA[Profilwächter]]></item>
+		<item name="wcf.acp.option.category.profileguard.description"><![CDATA[]]></item>
+		<item name="wcf.acp.option.category.profileguard.settings"><![CDATA[Einstellungen des Profilwächters]]></item>
+		<item name="wcf.acp.option.category.profileguard.settings.description"><![CDATA[]]></item>
+		<item name="wcf.acp.option.category.profileguard.notify"><![CDATA[Benachrichtigungseinstellungen]]></item>
+		<item name="wcf.acp.option.category.profileguard.notify.description"><![CDATA[Diese Einstellungen bestimmen, wann eine Nachricht gesendet wird.]]></item>
+		<item name="wcf.acp.option.profileguard_emailNotification"><![CDATA[E-Mail Benachrichtigung]]></item>
+		<item name="wcf.acp.option.profileguard_emailNotification.description"><![CDATA[Durch Aktivierung dieser Option wird die Benachrichtigung per E-Mail aktiviert.]]></item>
+		<item name="wcf.acp.option.profileguard_recipients"><![CDATA[Empfänger]]></item>
+		<item name="wcf.acp.option.profileguard_recipients.description"><![CDATA[Die hier ausgewählten Gruppen erhalten die Benachrichtigungen.]]></item>
+		<item name="wcf.acp.option.profileguard_notifyAvatar"><![CDATA[Avatarwechsel]]></item>
+		<item name="wcf.acp.option.profileguard_notifyAvatar.description"><![CDATA[Durch Aktivierung dieser Option wird die Benachrichtigung bei Avatarwechsel aktiviert.]]></item>
+		<item name="wcf.acp.option.profileguard_notifyCancel"><![CDATA[Abbruch Kündigung]]></item>
+		<item name="wcf.acp.option.profileguard_notifyCancel.description"><![CDATA[Durch Aktivierung dieser Option wird die Benachrichtigung beim Abbruch des Löschvorgangs aktiviert.]]></item>
+		<item name="wcf.acp.option.profileguard_notifyQuit"><![CDATA[Start Kündigung]]></item>
+		<item name="wcf.acp.option.profileguard_notifyQuit.description"><![CDATA[Durch Aktivierung dieser Option wird die Benachrichtigung beim Starten des Löschvorgangs aktiviert.]]></item>
+		<item name="wcf.acp.option.profileguard_notifyName"><![CDATA[Namensänderung]]></item>
+		<item name="wcf.acp.option.profileguard_notifyName.description"><![CDATA[Durch Aktivierung dieser Option wird die Benachrichtigung bei Namensänderung aktiviert.]]></item>
+	</category>
+	<category name="wcf.profileguard">
+		<item name="wcf.profileguard.sender"><![CDATA[Profilwächter]]></item>
+		<item name="wcf.profileguard.subject"><![CDATA[Änderungsnachricht]]></item>
+		<item name="wcf.profileguard.message.mail"><![CDATA[Betroffener Benutzer: {$username}
+Änderungen: {$changes}]]></item>
+		<item name="wcf.profileguard.newName"><![CDATA[neuer Name]]></item>
+		<item name="wcf.profileguard.isQuit"><![CDATA[Löschung eingeleitet]]></item>
+		<item name="wcf.profileguard.isCancel"><![CDATA[Löschung abgebrochen]]></item>
+		<item name="wcf.profileguard.newAvatar"><![CDATA[neuer Avatar]]></item>
+	</category>
+</language>

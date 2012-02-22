@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Id: package.xml 1785 2011-03-03 13:28:14Z TobiasH87 $ -->
+<package name="de.community4wcf.wcf.user.profileGuard" xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com/XSD/package.xsd">
+	<packageinformation>
+		<packagename><![CDATA[User Profile Guard - No WCF commercial functions]]></packagename>
+		<packagename language="de"><![CDATA[Profilwächter - Keine WCF kommerzielle Funktionen]]></packagename>
+		<packagename language="de-informal"><![CDATA[Profilwächter - Keine WCF kommerzielle Funktionen]]]></packagename>
+		<packagedescription><![CDATA[]]></packagedescription>
+		<packagedescription language="de"><![CDATA[Dieses Plugin fügt einen Wächter hinzu, der bei bestimmten Profiländerungen Nachrichten verschickt.]]></packagedescription>
+		<packagedescription language="de-informal"><![CDATA[Dieses Plugin fügt einen Wächter hinzu, der bei bestimmten Profiländerungen Nachrichten verschickt.]]></packagedescription>
+		<version>1.0.0</version> <!-- codename: Profile Guard -->
+		<packageurl><![CDATA[http://community4wcf.de]]></packageurl>
+		<date>2011-03-03</date>
+		<isunique>1</isunique>
+		<standalone>0</standalone>
+		<plugin>com.woltlab.wcf</plugin>
+	</packageinformation>
+
+	<licenseinformation>
+		<license><![CDATA[CC by-sa]]></license>
+		<licenseURL><![CDATA[http://creativecommons.org/licenses/by-sa/3.0/]]></licenseURL>
+	</licenseinformation>
+	<authorinformation>
+		<author><![CDATA[-noone- (and TobiasH)]]></author>
+		<authorURL><![CDATA[http://www.inwcf.de]]></authorURL>
+	</authorinformation>
+
+	<requiredpackages>
+		<requiredpackage minversion="1.1.3">com.woltlab.wcf</requiredpackage>
+		<requiredpackage minversion="1.0.0 pl 2" file="requirements/com.plunts.wcf.option.groupselect.tar.gz">com.plunts.wcf.option.groupselect</requiredpackage>
+	</requiredpackages>
+	<excludedpackages>
+		<excludedpackage>de.inwcf.wcf.user.profileGuard</excludedpackage>
+	</excludedpackages>
+
+	<instructions type="install">
+		<!-- files -->
+		<files>files.tar</files>
+		<!-- config -->
+		<options>xml/options.xml</options>
+		<eventlistener>xml/eventlistener.xml</eventlistener>
+		<!-- languages -->
+		<languages languagecode="de">xml/de.xml</languages>
+		<languages languagecode="de-informal">xml/de-informal.xml</languages>
+		<!-- <languages languagecode="en">xml/en.xml</languages> -->
+	</instructions>
+	<instructions type="update" fromversion="1.0.0 *">
+		<x></x>
+	</instructions>
+</package>
